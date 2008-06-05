@@ -55,7 +55,7 @@ find . -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
 rm -f configure
 libtoolize --copy --force; aclocal-1.7; autoconf; automake-1.7 --add-missing --copy --foreign && autoconf
 
-%configure2_5x \
+%configure2_5x --localstatedir=/var/lib \
     --with-apxs=%{_sbindir}/apxs
 
 %make
