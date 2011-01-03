@@ -6,7 +6,7 @@
 Summary:	Token based authentication to secure downloads and prevent deep-linking
 Name:		apache-%{mod_name}
 Version:	1.0.3
-Release:	%mkrel 7
+Release:	%mkrel 8
 Group:		System/Servers
 License:	GPL
 URL:		http://www.synd.info/
@@ -21,7 +21,7 @@ Requires:	apache >= 2.2.8
 BuildRequires:  apache-devel >= 2.2.8
 BuildRequires:	file
 BuildRequires:	autoconf2.5
-BuildRequires:	automake1.7
+BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -53,7 +53,7 @@ find . -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
 
 %build
 rm -f configure
-libtoolize --copy --force; aclocal-1.7; autoconf; automake-1.7 --add-missing --copy --foreign && autoconf
+libtoolize --copy --force; aclocal; autoconf; automake --add-missing --copy --foreign && autoconf
 
 %configure2_5x --localstatedir=/var/lib \
     --with-apxs=%{_sbindir}/apxs
