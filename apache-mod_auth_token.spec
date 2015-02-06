@@ -6,7 +6,7 @@
 Summary:	Token based authentication to secure downloads and prevent deep-linking
 Name:		apache-%{mod_name}
 Version:	1.0.3
-Release:	10
+Release:	11
 Group:		System/Servers
 License:	GPL
 URL:		http://www.synd.info/
