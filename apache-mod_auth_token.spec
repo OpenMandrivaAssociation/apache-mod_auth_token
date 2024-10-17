@@ -9,7 +9,7 @@ Version:	1.0.3
 Release:	11
 Group:		System/Servers
 License:	GPL
-URL:		http://www.synd.info/
+URL:		https://www.synd.info/
 Source0:	http://www.synd.info/downloads/releases/%{mod_name}-%{version}.tar.gz
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
