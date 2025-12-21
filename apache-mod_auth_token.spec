@@ -18,6 +18,8 @@ Requires(pre):	apache-conf >= 2.2.8
 Requires(pre):	apache >= 2.2.8
 Requires:	apache-conf >= 2.2.8
 Requires:	apache >= 2.2.8
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:  apache-devel >= 2.2.8
 BuildRequires:	file
 BuildRequires:	autoconf2.5
